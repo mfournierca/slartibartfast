@@ -25,9 +25,24 @@
                     <h4>{{ site.description }}</h4>
             </header>
             <nav class="blog-nav">
-              <a class="blog-nav-item active" href="{{site.baseurl}}/">Blog</a>
-              <a class="blog-nav-item" href="{{site.baseurl}}/about">About</a>
-              <a class="blog-nav-item" href="{{site.baseurl}}/contact">Contact</a>
+                {% if {{page.url}} contains '/blog' %}
+                    <a class="blog-nav-item active" href="{{site.baseurl}}/blog">Blog</a>
+                    <a class="blog-nav-item" href="{{site.baseurl}}/about">About</a>
+                    <a class="blog-nav-item" href="{{site.baseurl}}/contact">Contact</a>
+                {% elsif {{page.url}} contains '/about' %}
+                    <a class="blog-nav-item" href="{{site.baseurl}}/blog">Blog</a>
+                    <a class="blog-nav-item active" href="{{site.baseurl}}/about">About</a>
+                    <a class="blog-nav-item" href="{{site.baseurl}}/contact">Contact</a>
+                {% elsif {{page.url}} contains '/contact' %} 
+                    <a class="blog-nav-item" href="{{site.baseurl}}/blog">Blog</a>
+                    <a class="blog-nav-item" href="{{site.baseurl}}/about">About</a>
+                    <a class="blog-nav-item active" href="{{site.baseurl}}/contact">Contact</a>
+                {% else %}
+                    <a class="blog-nav-item" href="{{site.baseurl}}/blog">Blog</a>
+                    <a class="blog-nav-item" href="{{site.baseurl}}/about">About</a>
+                    <a class="blog-nav-item" href="{{site.baseurl}}/contact">Contact</a>
+                {% endif %}
+
             </nav>
           </div>
         </div>
