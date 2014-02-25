@@ -1,0 +1,20 @@
+---
+layout: page
+title: 
+---
+
+<!-- Show last 5 posts here -->
+{% for post in site.posts limit: 5  %}
+	<article class="blog-list-item">
+
+        <header>
+            <h3 class="blog-list-item-title"><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h2>
+            <div class="blog-list-item-meta">
+	            <span>Posted by {% if post.author %}{{post.author}}{% else %}{{site.author}}{% endif%} on <time datetime="{{post.date|date:"%F"}}">{{post.date|date:"%b %d, %Y"}}</time></span>
+	        </div>
+        </header>
+	
+		<div class="blog-list-item-excerpt">{{ post.excerpt }}</div>
+
+	</article>
+{% endfor %}
