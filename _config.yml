@@ -10,15 +10,11 @@ author: Your Name
 # Your email if you want it to be linked on the contact page
 author_email: you@example.com
 
-# The directory for category index pages. Change it to something else if
-# for example you want links like /categories/category1 instead of /category1
-category_dir: /
-
 # Uncomment if you are planning to run the blog in a subdirectory
 # Note - if you enable this, and attempt to view your site locally you have to use the baseurl in your local path.
 # Example, you must use http://localhost:4000/path/to/blog
 #baseurl: /path/to/blog 
-baseurl: /blog
+baseurl: 
 
 # The URL of your actual domain. This will be used to make absolute links in the RSS feed.
 url: http://yourdomain.com/
@@ -30,8 +26,8 @@ url: http://yourdomain.com/
 # If you don't have it install it via gem install rdiscount
 markdown: rdiscount
 
-# Makes pretty (descriptive) permalinks. See Jekyll docs for alternatives.
-permalink: pretty
+# Blog permalink. See Jekyll docs for alternatives.
+permalink: /blog/:year/:month/:day/:title/
 
 # Exclude metadata and development time dependencies (like Grunt plugins)
 exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, node_modules]

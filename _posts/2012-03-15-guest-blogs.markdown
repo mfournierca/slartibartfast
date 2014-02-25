@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Guest Posts
-category: Meta
+category: meta
 author: John Smith
 
 excerpt: How to quickly create guest blogs with a different author. 
