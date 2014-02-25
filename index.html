@@ -5,15 +5,16 @@ title: Home
 
 <!-- Show last 5 posts here -->
 {% for post in site.posts limit: 5  %}
-	<article>
+	<article class="blog-list-item">
 
         <header>
-            <h2><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h2>
-            <span class="date"><i class="icon-clock"></i><time datetime="{{post.date|date:"%F"}}">{{post.date|date:"%b %d, %Y"}}</time></span><br/>
-            <span class="author"><i class="icon-user"></i> {% if post.author %}{{post.author}}{% else %}{{site.author}}{% endif%}</span>
+            <h3 class="blog-list-item-title"><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h2>
+            <div class="blog-list-item-meta">
+	            <span>Posted by {% if post.author %}{{post.author}}{% else %}{{site.author}}{% endif%} on <time datetime="{{post.date|date:"%F"}}">{{post.date|date:"%b %d, %Y"}}</time></span>
+	        </div>
         </header>
 	
-		<div class="entry">{{ post.excerpt }}</div>
+		<div class="blog-list-item-excerpt">{{ post.excerpt }}</div>
 
 	</article>
 {% endfor %}

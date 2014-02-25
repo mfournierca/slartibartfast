@@ -1,14 +1,14 @@
 # Name of your blog (this will show up at the top of your page and in the RSS feed)
-name: Sample Jekyll Blog
+name: Matthew Fournier
 
 # Short description (goes below the title; it will also be used in the RSS feed)
-description: This is a sample Jekyll Blog.
+description: Math and Software from Ottawa, Ontario
 
 # Your name, as you want it to appear underneath each post and in the footer
-author: Your Name
+author: Matthew Fournier
 
 # Your email if you want it to be linked on the contact page
-author_email: you@example.com
+author_email:
 
 # Uncomment if you are planning to run the blog in a subdirectory
 # Note - if you enable this, and attempt to view your site locally you have to use the baseurl in your local path.

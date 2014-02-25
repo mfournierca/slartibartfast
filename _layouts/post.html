@@ -2,16 +2,15 @@
 layout: default
 ---
 
-<article>
+<article class="blog-post">
         <header>
-            <h2>{{ page.title }}</h2>
-            <span><i class="icon-clock"></i><time datetime="{{page.date|date:"%F"}}">{{page.date|date:"%b %d, %Y"}}</time></span><br/>
-            <span class="author"><i class="icon-user"></i> {% if page.author %}{{page.author}}{% else %}{{site.author}}{% endif%}</span>
+            <h2 class="blog-post-title">{{ page.title }}</h2>
+            <div class="blog-post-meta">
+	            <span>Posted by {% if page.author %}{{page.author}}{% else %}{{site.author}}{% endif%} on <time datetime="{{page.date|date:"%F"}}">{{page.date|date:"%b %d, %Y"}}</time></span><br/>
+	        </div>
         </header>
 
-        <div class="entry">{{ content }}</div>
-
-        <footer><!-- additional info --></footer>
+        <div class="blog-post-content">{{ content }}</div>
 
 </article>
 
