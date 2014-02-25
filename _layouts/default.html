@@ -4,54 +4,71 @@
     <head>
         <meta charset="utf-8"/>
         <title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
-        <link rel="stylesheet" href="{{site.baseurl}}/style.css" />
         <meta name="description" content="{{site.description}}"/>
         <meta name="author" content="{{site.author}}"/>
         <link rel="author" href="humans.txt"/>
         <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{site.baseurl}}/feed.xml" />
 
+
+        <link rel="stylesheet" href="{{site.baseurl}}/style.css" />
+        <link href="/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="{{site.baseurl}}/resources/fontello/css/fontello.css">
         <link rel="stylesheet" href="{{site.baseurl}}/resources/fontello/css/animation.css">
         <!--[if IE 7]><link rel="stylesheet" href="{{site.baseurl}}/resources/fontello/css/fontello-ie7.css"><![endif]-->
     </head>
 
     <body>
-        <header>
-            <h1><a href="{{site.baseurl}}/">{{ site.name }}</a></h1>
-                <h4>{{ site.description }}</h4>
-            <hr />
-        </header>
+        <div class="blog-masthead">
+          <div class="container">
+            <header>
+                <h1><a href="{{site.baseurl}}/">{{ site.name }}</a></h1>
+                    <h4>{{ site.description }}</h4>
+            </header>
+            <nav class="blog-nav">
+              <a class="blog-nav-item active" href="{{site.baseurl}}/">Blog</a>
+              <a class="blog-nav-item" href="{{site.baseurl}}/about">About</a>
+              <a class="blog-nav-item" href="{{site.baseurl}}/contact">Contact</a>
+            </nav>
+          </div>
+        </div>
 
-        <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10">
+                    <main>
 
-            <h3>First Heading</h3>
+                        {{ content }}
 
-            <ul>
-                <li><i class="icon-home"></i>   <a href="{{site.baseurl}}/">Home</a></li>
-                <li><i class="icon-mail"></i>   <a href="{{site.baseurl}}/contact">Contact</a></li>
-                <li><i class="icon-th"></i>     <a href="{{site.baseurl}}/archive">Archive</a></li>
-                <li><i class="icon-rss"></i>    <a href="{{site.baseurl}}/feed.xml">RSS Feed</a></li>
-            </ul>
+                    </main>
+                </div>
 
-            <h3>Second Heading</h3>
+                <div class="col-sm-2">
+                    <nav>
+                        <h3>First Heading</h3>
 
-            <ul>
-                <li><i class="icon-link"></i>   <a href="#">Link 1</a></li>
-                <li><i class="icon-link"></i>   <a href="#">Link 2</a></li>
-                <li><i class="icon-link"></i>   <a href="#">Link 3</a></li>
-            </ul>
-        </nav>
+                        <ul>
+                            <li><i class="icon-home"></i>   <a href="{{site.baseurl}}/">Home</a></li>
+                            <li><i class="icon-th"></i>     <a href="{{site.baseurl}}/archive">Archive</a></li>
+                            <li><i class="icon-rss"></i>    <a href="{{site.baseurl}}/feed.xml">RSS Feed</a></li>
+                        </ul>
 
-        <main>
+                        <h3>Second Heading</h3>
 
-            {{ content }}
+                        <ul>
+                            <li><i class="icon-link"></i>   <a href="#">Link 1</a></li>
+                            <li><i class="icon-link"></i>   <a href="#">Link 2</a></li>
+                            <li><i class="icon-link"></i>   <a href="#">Link 3</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
 
-        </main>
-
-        <footer>
-            <hr />
-            <p>&copy; <time>2012</time> {{ site.author }}</p>
-        </footer>
+            <footer>
+                <hr />
+                <p>&copy; <time>2012</time> {{ site.author }}</p>
+            </footer>
+        
+        </div>
 
     </body>
 

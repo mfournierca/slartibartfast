@@ -17,7 +17,7 @@ author_email: you@example.com
 baseurl: 
 
 # The URL of your actual domain. This will be used to make absolute links in the RSS feed.
-url: http://yourdomain.com/
+url: http://mfournier.ca/
 
 #### Under the Hood Stuff #####
 
