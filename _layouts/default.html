@@ -13,10 +13,9 @@
 
         <link rel="stylesheet" href="/resources/style.css" />
         <link href="/resources/bootstrap/css/bootstrap.css" rel="stylesheet">
-        <link rel="stylesheet" href="/resources/fontello/css/fontello.css">
-        <link rel="stylesheet" href="/resources/fontello/css/animation.css">
         <!--[if IE 7]><link rel="stylesheet" href="/resources/fontello/css/fontello-ie7.css"><![endif]-->
 
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     </head>
 
     <body>
@@ -32,6 +31,12 @@
                         </a>
                     </div>
                  
+                    <section class="site-icons">
+                      <a href="https://github.com/{{ site.github }}" target="_blank"><i class="fa fa-lg fa-github"></i></a>
+                      <a href="https://twitter.com/{{ site.twitter }}" target="_blank"><i class="fa fa-lg fa-twitter"></i></a>
+                      <a href="/feed.xml"><i class="fa fa-lg fa-rss"></i></a>
+                    </section>
+
                     <nav class="site-nav">
                         <div class="">
                             <ul class="">
@@ -64,7 +69,6 @@
                                 {% endif %}
                             </ul>
                         </div>
-
                     </nav>
 
                 </div>

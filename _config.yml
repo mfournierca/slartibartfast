@@ -1,17 +1,24 @@
-# Name of your blog (this will show up at the top of your page and in the RSS feed)
-name: Matthew Fournier
+#### Site Configuration ####
 
-# Short description (goes below the title; it will also be used in the RSS feed)
-description: Math and Software from Ottawa, Ontario
+# Name of your blog (this will show up at the top of your page and in the RSS feed)
+name: Slarti Bartfast
 
 # Your name, as you want it to appear underneath each post and in the footer
-author: Matthew Fournier
+author: Mr Slartibartfast
 
 # Your email if you want it to be linked on the contact page
-author_email:
+author_email: email@slartibartfast.com
 
 # The URL of your actual domain. This will be used to make absolute links in the RSS feed.
-url: http://mfournier.ca/
+url: http://yourwebsite.com/
+
+#your github account URL
+github: http://github.com/yourgithubname
+
+#your twitter handle
+twitter: http://twitter.com/yourtwitterhandle
+
+
 
 #### Under the Hood Stuff #####
 
@@ -24,4 +31,4 @@ markdown: rdiscount
 permalink: /blog/:year/:month/:day/:title/
 
 # Exclude metadata and development time dependencies (like Grunt plugins)
-exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, node_modules]
+exclude: [README.md]

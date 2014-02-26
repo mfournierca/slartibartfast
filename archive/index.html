@@ -3,13 +3,13 @@ layout: page
 title: Archive
 ---
 
-    <section>
-        <table>
-            {% for post in site.posts %}
-            <tr>
-                <td style="padding-right: 15px;"><time datetime="{{post.date|date:"%F"}}">{{post.date|date:"%b %d, %Y"}}</time></td>  
-                <td><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></td>
-            </tr>
-    	{% endfor %}
-        </table>
-    </section>
+<section>
+    <table>
+        {% for post in site.posts %}
+        <tr>
+            <td style="padding-right: 15px;"><time datetime="{{post.date|date:"%F"}}">{{post.date|date:"%b %d, %Y"}}</time></td>  
+            <td><a href="{{ post.url }}">{{ post.title }}</a></td>
+        </tr>
+	{% endfor %}
+    </table>
+</section>

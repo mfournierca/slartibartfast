@@ -5,7 +5,7 @@
 
 .site-name {
     text-transform: uppercase;
-    margin: 20px 0 20px 0; 
+    margin: 0 0 20px 0; 
 }
 
 .site-name a,
@@ -19,15 +19,27 @@
 .site-name #fname {
   padding-left: 1px;
   font-size: 23px;
-  letter-spacing: 2px;
+  letter-spacing: 9px;  /* change this to modify the letter spacing in first name */
   color: black; 
 }
 
 .site-name #lname {
   font-size: 23px;
   font-weight: bold;
-  letter-spacing: 1px;
+  letter-spacing: 1px;   /* change this to modify the letter spacing in last name */
   color: black; 
+}
+
+
+/* 
+* icon customization
+*/
+.site-icons {
+  margin-bottom: 20px;
+}
+
+.fa {
+  color: black;
 }
 
 
@@ -39,12 +51,11 @@
   margin-left: 0;
   margin-bottom: 30px;
   padding-left: 0;
-  margin-top: 20px;
   list-style: none;
 }
 
 .site-nav li {
-  padding-top: 10px;
+  padding-bottom: 10px;
   padding-right: 20px;
   color: #999;
 }
@@ -64,7 +75,22 @@
 
 
 /*
-* List of posts
+* page, for archive, about etc
+*/
+.page {
+  margin-bottom: 60px;
+  font-size: 14pt;
+  color: #000;
+}
+
+.page h2 {
+  margin-bottom: 5px;
+  font-size: 22pt;
+}
+
+
+/*
+* List of posts for blog page
 */
 
 .blog-list {
@@ -125,30 +151,54 @@
 }
 
 
+
+/*
+*  misc
+*/ 
+.col-md-2 {
+  /* for some reason bootstrap doesn't pad the top of the width
+  2 columns, but it does all the others */
+  padding-top: 20px;
+}
+
+
+
 /*
 * media queries
 */
 
 @media(max-width:767px) {
-    .site-nav li{
+  .site-nav li{
     display: inline-block;
+  }
+  .fa {
+  padding-right: 30px;   /* change this and corresponding media queries depending on the size of your name */
   }
 }
 
 @media(min-width:768px){
-    .site-nav li{
+  .site-nav li{
     display: inline-block;
+  }
+  .fa {
+  padding-right: 30px;   
   }
 }
 
 @media(min-width:992px){
-    .site-nav li{
+  .site-nav li{
     display: block;
+  }
+  .fa {
+  padding-right: 25px;   
   }
 }
 
 @media(min-width:1200px){
-    .site-nav li{
+  .site-nav li{
     display: block;
+  }
+  .fa {
+  padding-right: 30px;  
   }
 }
