@@ -9,7 +9,7 @@ title: Home
 		<article class="blog-list-item">
 
 	        <header>
-	            <h3 class="blog-list-item-title"><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h3>
+	            <h3 class="blog-list-item-title"><a href="{{post.url}}">{{ post.title }}</a></h3>
 	            <div class="blog-list-item-meta">
 		            <span>Posted by {% if post.author %}{{post.author}}{% else %}{{site.author}}{% endif%} on <time datetime="{{post.date|date:"%F"}}">{{post.date|date:"%b %d, %Y"}}</time></span>
 		        </div>

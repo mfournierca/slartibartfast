@@ -6,16 +6,16 @@
         <title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
         <meta name="description" content="{{site.description}}"/>
         <meta name="author" content="{{site.author}}"/>
-        <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{site.baseurl}}/feed.xml" />
+        <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/feed.xml" />
 
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="{{site.baseurl}}/resources/style.css" />
-        <link href="{{site.baseurl}}/resources/bootstrap/css/bootstrap.css" rel="stylesheet">
-        <link rel="stylesheet" href="{{site.baseurl}}/resources/fontello/css/fontello.css">
-        <link rel="stylesheet" href="{{site.baseurl}}/resources/fontello/css/animation.css">
-        <!--[if IE 7]><link rel="stylesheet" href="{{site.baseurl}}/resources/fontello/css/fontello-ie7.css"><![endif]-->
+        <link rel="stylesheet" href="/resources/style.css" />
+        <link href="/resources/bootstrap/css/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" href="/resources/fontello/css/fontello.css">
+        <link rel="stylesheet" href="/resources/fontello/css/animation.css">
+        <!--[if IE 7]><link rel="stylesheet" href="/resources/fontello/css/fontello-ie7.css"><![endif]-->
 
     </head>
 
@@ -33,38 +33,37 @@
                     </div>
                  
                     <nav class="site-nav">
-                            
-                            <div class="">
-                                <ul class="">
-                                    <!-- add active class to nav bar links depending on what top-level folder the page is in -->
-                                    {% if {{page.url}} contains '/blog' %}
-                                        <li><a class="active" href="{{site.baseurl}}/blog">Blog</a></li>
-                                        <li><a href="{{site.baseurl}}/about">About</a></li>
-                                        <li><a href="{{site.baseurl}}/contact">Contact</a></li>
-                                        <li><a href="{{site.baseurl}}/archive">Archive</a></li>
-                                    {% elsif {{page.url}} contains '/about' %}
-                                        <li><a href="{{site.baseurl}}/blog">Blog</a></li>
-                                        <li><a class="active" href="{{site.baseurl}}/about">About</a></li>
-                                        <li><a href="{{site.baseurl}}/contact">Contact</a></li>
-                                        <li><a href="{{site.baseurl}}/archive">Archive</a></li>
-                                    {% elsif {{page.url}} contains '/contact' %} 
-                                        <li><a href="{{site.baseurl}}/blog">Blog</a></li>
-                                        <li><a href="{{site.baseurl}}/about">About</a></li>
-                                        <li><a class="active" href="{{site.baseurl}}/contact">Contact</a></li>
-                                        <li><a href="{{site.baseurl}}/archive">Archive</a></li>
-                                    {% elsif {{page.url}} contains '/archive' %} 
-                                        <li><a href="{{site.baseurl}}/blog">Blog</a></li>
-                                        <li><a href="{{site.baseurl}}/about">About</a></li>
-                                        <li><a href="{{site.baseurl}}/contact">Contact</a></li>
-                                        <li><a class="active" href="{{site.baseurl}}/archive">Archive</a></li>
-                                    {% else %}
-                                        <li><a href="{{site.baseurl}}/blog">Blog</a></li>
-                                        <li><a href="{{site.baseurl}}/about">About</a></li>
-                                        <li><a href="{{site.baseurl}}/contact">Contact</a></li>
-                                        <li><a href="{{site.baseurl}}/archive">Archive</a></li>
-                                    {% endif %}
-                                </ul>
-                            </div>
+                        <div class="">
+                            <ul class="">
+                                <!-- add active class to nav bar links depending on what top-level folder the page is in -->
+                                {% if {{page.url}} contains '/blog' %}
+                                    <li><a class="active" href="/blog">Blog</a></li>
+                                    <li><a href="/about">About</a></li>
+                                    <li><a href="/contact">Contact</a></li>
+                                    <li><a href="/archive">Archive</a></li>
+                                {% elsif {{page.url}} contains '/about' %}
+                                    <li><a href="/blog">Blog</a></li>
+                                    <li><a class="active" href="/about">About</a></li>
+                                    <li><a href="/contact">Contact</a></li>
+                                    <li><a href="/archive">Archive</a></li>
+                                {% elsif {{page.url}} contains '/contact' %} 
+                                    <li><a href="/blog">Blog</a></li>
+                                    <li><a href="/about">About</a></li>
+                                    <li><a class="active" href="/contact">Contact</a></li>
+                                    <li><a href="/archive">Archive</a></li>
+                                {% elsif {{page.url}} contains '/archive' %} 
+                                    <li><a href="/blog">Blog</a></li>
+                                    <li><a href="/about">About</a></li>
+                                    <li><a href="/contact">Contact</a></li>
+                                    <li><a class="active" href="/archive">Archive</a></li>
+                                {% else %}
+                                    <li><a href="/blog">Blog</a></li>
+                                    <li><a href="/about">About</a></li>
+                                    <li><a href="/contact">Contact</a></li>
+                                    <li><a href="/archive">Archive</a></li>
+                                {% endif %}
+                            </ul>
+                        </div>
 
                     </nav>
 
@@ -86,7 +85,7 @@
         
         </div>
 
-        <script src="{{site.baseurl}}/resources/bootstrap/js/bootstrap.js" />
+        <script src="/resources/bootstrap/js/bootstrap.js" />
     </body>
 
 </html>
