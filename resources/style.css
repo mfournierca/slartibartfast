@@ -1,0 +1,155 @@
+
+/*
+* head, name
+*/
+
+.site-name {
+    text-transform: uppercase;
+    margin: 20px 0 20px 0; 
+}
+
+.site-name a,
+.site-name a:hover,
+.site-name a:focus,
+.site-name a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+.site-name #fname {
+  padding-left: 1px;
+  font-size: 23px;
+  letter-spacing: 2px;
+  color: black; 
+}
+
+.site-name #lname {
+  font-size: 23px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: black; 
+}
+
+
+/* 
+* Nav links 
+*/
+
+.site-nav ul {
+  margin-left: 0;
+  margin-bottom: 30px;
+  padding-left: 0;
+  margin-top: 20px;
+  list-style: none;
+}
+
+.site-nav li {
+  padding-top: 10px;
+  padding-right: 20px;
+  color: #999;
+  font-weight: 500;
+}
+
+.site-nav a,
+.site-nav a:hover,
+.site-nav a:focus,
+.site-nav a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Active state gets a caret at the bottom */
+.site-nav .active {
+  color: #222;
+}
+
+
+/*
+* List of posts
+*/
+
+.blog-list {
+  margin-bottom: 60px;
+}
+
+.blog-list-item {
+  margin-bottom: 40px;
+}
+
+.blog-list-item-title {
+}
+
+.blog-list-item-title a {
+  color: #222;
+}
+
+.blog-list-item-meta {
+  margin-bottom: 10px;
+  font-size: 12pt;
+  color: #999;
+}
+
+.blog-list-item-excerpt {
+  font-size: 14pt;
+}
+
+
+/*
+ * Blog posts
+ */
+
+.blog-post {
+  margin-bottom: 60px;
+}
+.blog-post-title {
+  margin-bottom: 5px;
+  font-size: 22pt;
+}
+.blog-post-meta {
+  margin-bottom: 14pt;
+  font-size: 12pt;
+  color: #999;
+}
+
+.blog-post-content {
+  margin-bottom: 14pt;
+  font-size: 14pt;
+}
+
+
+/*
+ * Footer
+ */
+
+.blog-footer {
+  padding: 40px 0;
+}
+
+
+/*
+* media queries
+*/
+
+@media(max-width:767px) {
+    .site-nav li{
+    display: inline-block;
+  }
+}
+
+@media(min-width:768px){
+    .site-nav li{
+    display: inline-block;
+  }
+}
+
+@media(min-width:992px){
+    .site-nav li{
+    display: block;
+  }
+}
+
+@media(min-width:1200px){
+    .site-nav li{
+    display: block;
+  }
+}
