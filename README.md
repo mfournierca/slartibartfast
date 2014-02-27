@@ -44,7 +44,7 @@ Following features are available:
 * Automatically generate a valid RSS feed (see feed.xml in root directory).
 * Automatically generate a valid Google Sitemap (see sitemap.xml in root directory).
 * Uses Twitter Bootstrap so pages adjust to screen width. Can be used on desktop, tablet, mobile. 
-* Tested on Chrome, Firefox, Opera, Safari, Mobile Chrome. 
+* Tested on Chrome, Firefox, Opera, Safari, Mobile Chrome, Mobile Safari, IE 8. 
 
 
 Screenshots
