@@ -1,7 +1,7 @@
 Slartibartfast
 ===
 
-This is a simple, whitespace heavy template for Jekyll. It draws inspiration and some components from [holman/left](https://github.com/holman/left) and [maciakl/Sample-Jekyll-Site](https://github.com/maciakl/Sample-Jekyll-Site). However, Slartibartfast has been heavily modified and does not resemble either. 
+Slartibartfast is a simple, whitespace oriented template for the [Jekyll](http://jekyllrb.com/) static site generator. It draws inspiration and some components from [holman/left](https://github.com/holman/left) and [maciakl/Sample-Jekyll-Site](https://github.com/maciakl/Sample-Jekyll-Site). However, Slartibartfast has been heavily modified and does not resemble either. 
 
 
 Requirements
@@ -24,9 +24,11 @@ What to Do
 
 To use this template:
 
-1. Clone to some directory
+* Clone this repository to some directory
 * Modify `_config.yaml` with your name, blog title, description and etc...
 * Tweak `style.css` and HTML files in `_layouts` to personalize
+* Customize the /about/index.html page
+* Add your contact information on the /contact/index.html page
 * Create blog entries in `_posts/` - work off the sample posts there
 * Run `jekyll --server` to generate site locally
 * View it by going to `http://localhost:4000` and make sure it looks good
@@ -47,12 +49,5 @@ Following features are available:
 
 
   
-![Front Page](http://i.imgur.com/WeXFkWn.jpg) 
-  
-Individual post:
-  
-![Individual post](http://i.imgur.com/o6sSJEt.jpg) 
-  
-Archive page:
-  
-![Archive page](http://i.imgur.com/Fmy6FPt.jpg) 
+![Front Page](img/screenshot1.png) 
+![Narrow Width](img/screenshot2.png)
