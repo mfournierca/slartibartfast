@@ -1,7 +1,7 @@
 Slartibartfast
 ===
 
-Slartibartfast is a simple, whitespace oriented template for the [Jekyll](http://jekyllrb.com/) static site generator. It draws inspiration and some components from [holman/left](https://github.com/holman/left) and [maciakl/Sample-Jekyll-Site](https://github.com/maciakl/Sample-Jekyll-Site). However, Slartibartfast has been heavily modified and does not resemble either. 
+Slartibartfast is a simple, whitespace oriented template for the [Jekyll](http://jekyllrb.com/) static site generator. It draws inspiration and some components from [holman/left](https://github.com/holman/left) and [maciakl/Sample-Jekyll-Site](https://github.com/maciakl/Sample-Jekyll-Site). 
 
 
 Requirements
@@ -16,7 +16,7 @@ Development time dependencies:
 
 Run-time dependencies:
 
-* A web server (any will do)
+* A web server
 
 
 What to Do
@@ -24,7 +24,7 @@ What to Do
 
 To use this template:
 
-* Clone this repository to some directory
+* Clone this repository
 * Modify `_config.yaml` with your name, blog title, description and etc...
 * Tweak `style.css` and HTML files in `_layouts` to personalize
 * Customize the /about/index.html page
@@ -43,11 +43,11 @@ Following features are available:
 
 * Automatically generate a valid RSS feed (see feed.xml in root directory).
 * Automatically generate a valid Google Sitemap (see sitemap.xml in root directory).
-* Uses Twitter Bootstrap so pages adjust to screen width. Can be used on desktop, tablet, mobile without modifications. 
-* Predefined directory structure. 
+* Uses Twitter Bootstrap so pages adjust to screen width. Can be used on desktop, tablet, mobile. 
 * Tested on Chrome, Firefox, Opera, Safari. 
 
 
   
 ![Front Page](img/screenshot1.png) 
 ![Narrow Width](img/screenshot2.png)
+![Blog Post](img/screenshot3.png)
