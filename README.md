@@ -47,6 +47,9 @@ Following features are available:
 * Tested on Chrome, Firefox, Opera, Safari. 
 
 
+Screenshots
+-----------
+
   
 ![Front Page](img/screenshot1.png) 
 ![Narrow Width](img/screenshot2.png)
