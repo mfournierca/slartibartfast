@@ -1,0 +1,13 @@
+---
+title: Features
+layout: post
+---
+
+Slartibartfast sports the following features:
+
+
+* Automatically generate a valid [RSS feed](/feed.xml) (see feed.xml in root directory).
+* Automatically generate a valid [Google Sitemap](/sitemap.xml) (see sitemap.xml in root directory).
+* Uses Twitter Bootstrap so pages adjust to screen width. Can be used on desktop, tablet, mobile without modifications. 
+* Predefined directory structure. 
+* Tested on Chrome, Firefox, Opera, Safari. 
