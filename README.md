@@ -9,10 +9,9 @@ Requirements
 
 Development time dependencies:
 
-* [Ruby][rb]
-* [Gems][gm]
-* [Jekyll][jk]
-* [Rdiscount][rd] (optional - comment out in `_confing.yaml` to use Maroku)
+* [Ruby](https://www.ruby-lang.org)
+* [Jekyll](http://jekyllrb.com/)
+* [Rdiscount](https://github.com/davidfstr/rdiscount) (optional - comment out in `_confing.yaml` to use Maroku)
 
 Run-time dependencies:
 
@@ -24,16 +23,16 @@ What to Do
 
 To use this template:
 
-* Clone this repository
-* Modify `_config.yaml` with your name, blog title, description and etc...
-* Tweak `style.css` and HTML files in `_layouts` to personalize
-* Customize the /about/index.html page
-* Add your contact information on the /contact/index.html page
-* Create blog entries in `_posts/` - work off the sample posts there
-* Run `jekyll --server` to generate site locally
-* View it by going to `http://localhost:4000` and make sure it looks good
-* If all is well, upload contents of `_site` to your server
-* Repeat steps 4-7 to update blog
+1. Clone this repository
+2. Modify `_config.yaml` with your name, blog title, description and etc...
+3. Tweak `style.css` and HTML files in `_layouts` to personalize
+4. Customize the /about/index.html page
+5. Add your contact information on the /contact/index.html page
+6. Create blog entries in `_posts/` - work off the sample posts there
+7. Run `jekyll --server` to generate site locally
+8. View it by going to `http://localhost:4000` and make sure it looks good
+9. If all is well, upload contents of `_site` to your server
+10. Repeat steps 4-7 to update blog
 
 
 Features
